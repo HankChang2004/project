@@ -1,0 +1,44 @@
+{
+  "model_type": "SVM (Support Vector Regression)",
+  "input_features": [
+    "max_shoulder_external_rotation",
+    "time_max_shoulder_external_rotation"
+  ],
+  "output_targets": [
+    "max_hip_shoulder_separation",
+    "time_max_hip_shoulder_separation"
+  ],
+  "best_params": {
+    "estimator__C": 10,
+    "estimator__epsilon": 0.2,
+    "estimator__gamma": 0.01
+  },
+  "training_samples": 328,
+  "test_samples": 83,
+  "metrics": {
+    "train_mse": 20.043209618423198,
+    "test_mse": 18.486773724534455,
+    "train_mae": 2.549553885506926,
+    "test_mae": 2.4966338983457357,
+    "train_r2": 0.5505537582554119,
+    "test_r2": 0.5195865049243462
+  },
+  "per_output_metrics": {
+    "max_hip_shoulder_separation": {
+      "train_mse": 40.08588644584777,
+      "test_mse": 36.97299459602912,
+      "train_mae": 5.081856359195493,
+      "test_mae": 4.974846291996786,
+      "train_r2": 0.10715436276558132,
+      "test_r2": 0.045334849570050295
+    },
+    "time_max_hip_shoulder_separation": {
+      "train_mse": 0.0005327909986382901,
+      "test_mse": 0.0005528530398082823,
+      "train_mae": 0.017251411818358865,
+      "test_mae": 0.0184215046946854,
+      "train_r2": 0.9939531537452421,
+      "test_r2": 0.9938381602786415
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "model_type": "SVM (Support Vector Regression)",
+  "input_features": [
+    "max_shoulder_external_rotation",
+    "time_max_shoulder_external_rotation"
+  ],
+  "output_targets": [
+    "max_elbow_extension",
+    "time_max_elbow_extension"
+  ],
+  "best_params": {
+    "estimator__C": 100,
+    "estimator__epsilon": 0.2,
+    "estimator__gamma": 0.01
+  },
+  "training_samples": 328,
+  "test_samples": 83,
+  "metrics": {
+    "train_mse": 28.50087674240217,
+    "test_mse": 35.214053490212414,
+    "train_mae": 2.9947050310252576,
+    "test_mae": 3.3508718347014854,
+    "train_r2": 0.3500887698366474,
+    "test_r2": 0.18416900727566898
+  },
+  "per_output_metrics": {
+    "max_elbow_extension": {
+      "train_mse": 56.95349627596763,
+      "test_mse": 70.3668901954615,
+      "train_mae": 5.801858596589255,
+      "test_mae": 6.48666174026965,
+      "train_r2": 0.030516072980290687,
+      "test_r2": -0.17808072845551326
+    },
+    "time_max_elbow_extension": {
+      "train_mse": 0.04825720883667481,
+      "test_mse": 0.06121678496333031,
+      "train_mae": 0.18755146546126233,
+      "test_mae": 0.21508192913332058,
+      "train_r2": 0.6696614666930052,
+      "test_r2": 0.5464187430068516
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "model_type": "Support Vector Regression (RBF kernel)",
+    "best_params": {
+        "C": 100,
+        "epsilon": 1,
+        "gamma": "scale"
+    },
+    "train_size": 328,
+    "test_size": 83,
+    "train_rmse": 2.05539111560756,
+    "train_mae": 1.4716703944633531,
+    "train_r2": 0.8096080057079955,
+    "test_rmse": 2.971891002232783,
+    "test_mae": 2.354440804071842,
+    "test_r2": 0.6029945565695382,
+    "cv_rmse_mean": 3.4826296681021915,
+    "cv_rmse_std": 0.2968917286634525,
+    "features": [
+        "max_shoulder_external_rotation",
+        "time_max_shoulder_external_rotation",
+        "max_elbow_extension",
+        "time_max_elbow_extension",
+        "max_hip_shoulder_separation",
+        "time_max_hip_shoulder_separation"
+    ]
+}
